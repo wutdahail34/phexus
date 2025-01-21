@@ -246,7 +246,7 @@
 
 
  .backup-section {
-    background-color: #3e3e3e; /* Matches the navbar and game grid background */
+    background-color: #3e3e3e; /* Matches the navbar and gxme grid background */
     padding: 40px 20px; /* Adds padding for better spacing */
     border-radius: 10px; /* Rounded corners for a modern look */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
@@ -329,7 +329,7 @@
     <div class="loading-text" id="loadingText">Loading...</div>
 
     <section class="gxme-grid">
-        <!-- Game cards will be appended here by JavaScript -->
+        <!-- gxme cards will be appended here by JavaScript -->
     </section>
 
     <section class="backup-section">
@@ -372,9 +372,9 @@
                 .then(data => {
                     const gxmeGrid = document.querySelector('.gxme-grid');
 
-                    data.forEach(game => {
+                    data.forEach(gxme => {
                         let gxmeLink = document.createElement('a');
-                        gxmeLink.href = link2 + "/gxmes/" + game.foldername; 
+                        gxmeLink.href = link2 + "/gxmes/" + gxme.foldername; 
                         gxmeLink.target = '_self'; 
                         gxmeLink.style.textDecoration = 'none'; 
                         gxmeLink.style.color = 'inherit'; 
@@ -384,13 +384,13 @@
                         gxmeCard.style.cursor = 'pointer';
 
                         let img = document.createElement('img');
-                        img.src = game.imgsrc; // Use the imgsrc from the JSON
-                        img.alt = game.name;
+                        img.src = gxme.imgsrc; // Use the imgsrc from the JSON
+                        img.alt = gxme.name;
                         img.style.width = '100px';
                         img.style.height = '100px';
 
                         let h3 = document.createElement('h3');
-                        h3.textContent = game.name; // Use the name from the JSON
+                        h3.textContent = gxme.name; // Use the name from the JSON
 
                         gxmeCard.appendChild(img);
                         gxmeCard.appendChild(h3);
@@ -398,12 +398,12 @@
                         gxmeGrid.appendChild(gxmeLink);
                     });
 
-                    // Hide the loading text after games are loaded
+                    // Hide the loading text after gxmes are loaded
                     loadingText.style.display = 'none';
                 })
                 .catch(error => {
                     console.error('Error loading the list.json:', error);
-                    loadingText.textContent = 'Failed to load games. Please try again later.';
+                    loadingText.textContent = 'Failed to load gxmes. Please try again later.';
                 });
             
             // Search functionality
@@ -421,10 +421,10 @@
                     .then(response => response.json())
                     .then(data => {
                         // Re-populate with only matching cards
-                        data.forEach(game => {
-                            if (game.name.toLowerCase().includes(query)) {
+                        data.forEach(gxme => {
+                            if (gxme.name.toLowerCase().includes(query)) {
                                 let gxmeLink = document.createElement('a');
-                                gxmeLink.href = link2 + "/gxmes/" + game.foldername; 
+                                gxmeLink.href = link2 + "/gxmes/" + gxme.foldername; 
                                 gxmeLink.target = '_self'; 
                                 gxmeLink.style.textDecoration = 'none'; 
                                 gxmeLink.style.color = 'inherit'; 
@@ -434,13 +434,13 @@
                                 gxmeCard.style.cursor = 'pointer';
 
                                 let img = document.createElement('img');
-                                img.src = game.imgsrc; 
-                                img.alt = game.name;
+                                img.src = gxme.imgsrc; 
+                                img.alt = gxme.name;
                                 img.style.width = '100px';
                                 img.style.height = '100px';
 
                                 let h3 = document.createElement('h3');
-                                h3.textContent = game.name; 
+                                h3.textContent = gxme.name; 
 
                                 gxmeCard.appendChild(img);
                                 gxmeCard.appendChild(h3);
@@ -452,8 +452,8 @@
                         loadingText.style.display = 'none';
                     })
                     .catch(error => {
-                        console.error('Error searching games:', error);
-                        loadingText.textContent = 'Failed to search games. Please try again later.';
+                        console.error('Error searching gxmes:', error);
+                        loadingText.textContent = 'Failed to search gxmes. Please try again later.';
                     });
             }
 
@@ -489,7 +489,7 @@
     function randombutton() {
         const links = document.querySelectorAll('section.gxme-grid a');
         if (links.length === 0) {
-            alert("No games available to play.");
+            alert("No gxmes available to play.");
             return;
         }
         const randomIndex = Math.floor(Math.random() * links.length);
