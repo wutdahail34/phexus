@@ -124,7 +124,7 @@ header nav a:hover {
 
 .game-iframe {
     width: 80%;
-    height:550px;
+    height:70vh;
     border: none;
     border-radius: 10px 10px 0 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
