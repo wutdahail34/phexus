@@ -250,14 +250,8 @@
         });
 
         function randombutton() {
-            const links = document.querySelectorAll('#gxmeGrid a');
-            if (links.length === 0) {
-                alert("No games available to play.");
-                return;
-            }
-            const randomIndex = Math.floor(Math.random() * links.length);
-            const randomLink = links[randomIndex];
-            randomLink.click();
+            window.location.href = '/gxmes';
+
         }
     </script>
 </body>
