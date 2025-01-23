@@ -14,7 +14,7 @@ async function fetchData(index) {
         iframe.src = src;
         const image = document.getElementById('bottomimage');
         image.src = imgsrc; 
-        document.getElementById('gameTitle').textContent = name1 + ' play on maxwellstevenson.com';
+        document.getElementById('gameTitle').textContent = 'Play ' + name1 + ' on maxwellstevenson.com';
         document.title = name1 + ' - play on maxwellstevenson.com';
         const imgSrc = imgsrc; document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'icon', href: imgSrc, id: 'faviconLink' }));
         const keywords = 'gxme, gxmes, ' + name1 + ' unblxcked, ' + name1 + ' maxwellstevenson.com, Vafor, Vafor IT, ' + name1 + ', ' + name1 + ' ' + 'school' + ', github gxmes, github ' + name1;
