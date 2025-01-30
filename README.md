@@ -14,4 +14,4 @@ In summary, you are free to share and host the *games* themselves, but you must 
 
 ## Contact
 
-For any questions or clarification regarding these usage terms, please open an issue on the offical repository. Link can be found ([here](https://github.com/phexus23/phexus23.github.io))
+For any questions or clarification regarding these usage terms, please open an issue on the offical repository. Link can be found [here](https://github.com/phexus23/phexus23.github.io)
