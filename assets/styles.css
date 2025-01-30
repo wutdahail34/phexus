@@ -46,6 +46,7 @@
         }
 
         .hero-section h1 {
+            color: #b7e1c0;
             font-size: 3.5rem;
             margin-bottom: 20px;
         }
@@ -53,6 +54,7 @@
         .hero-section p {
             font-size: 1.25rem;
             margin-bottom: 30px;
+            color:#eaeaea;
         }
 
         .btn-custom {
