@@ -177,39 +177,39 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7); /* Darker background for modern look */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding-top: 60px;
 }
 
 .modal-content {
-    background-color: #2d2d2d; /* Consistent with body background */
+    background-color: #2d2d2d; 
     margin: 5% auto;
     padding: 20px;
-    border: none; /* Remove border for cleaner look */
-    border-radius: 10px; /* Rounded corners */
+    border: none; 
+    border-radius: 10px; 
     width: 80%;
-    max-width: 600px; /* Limit the size for better aesthetics */
-    color: #eaeaea; /* Consistent text color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    max-width: 600px; 
+    color: #eaeaea; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .close {
-    color: #eaeaea; /* Consistent with the text color */
+    color: #eaeaea; 
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.3s; /* Smooth transition */
+    transition: color 0.3s; 
 }
 
 .close:hover,
 .close:focus {
-    color: #b7e1c0; /* Highlight color on hover */
+    color: #b7e1c0; 
     text-decoration: none;
 }
 
 .modal-content h2 {
-    color: #b7e1c0; /* Title color consistent with headings */
+    color: #b7e1c0; 
     margin-bottom: 20px;
 }
 
@@ -224,54 +224,53 @@
 
 
  .backup-section {
-    background-color: #3e3e3e; /* Matches the navbar and gxme grid background */
-    padding: 40px 20px; /* Adds padding for better spacing */
-    border-radius: 10px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-    margin: 20px 0; /* Adds margin for spacing between sections */
+    background-color: #3e3e3e; 
+    padding: 40px 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    margin: 20px 0; 
 }
 
 .backup-section h2 {
-    color: #b7e1c0; /* Matches the heading color */
-    font-size: 2rem; /* Slightly larger font size for emphasis */
-    margin-bottom: 20px; /* Adds spacing below the heading */
+    color: #b7e1c0; 
+    font-size: 2rem; 
+    margin-bottom: 20px; 
 }
 
 .backup-section p {
-    color: #eaeaea; /* Consistent text color */
-    font-size: 1.2rem; /* Slightly larger font size for readability */
-    margin-bottom: 20px; /* Adds spacing below the paragraph */
+    color: #eaeaea; 
+    font-size: 1.2rem; 
+    margin-bottom: 20px; 
 }
 
 .backup-section button {
-    background-color: #b7e1c0; /* Matches the button color */
-    color: #1a1a1a; /* Matches the text color */
-    border: none; /* Removes default border */
-    border-radius: 5px; /* Rounded corners for a modern look */
-    padding: 10px 20px; /* Adds padding for better spacing */
-    font-size: 1.2rem; /* Slightly larger font size for readability */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+    background-color: #b7e1c0; 
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
 }
 
 .backup-section button:hover {
-    background-color: #a0d1a4; /* Slightly darker green on hover */
-    transform: translateY(-2px); /* Slightly lifts the button on hover */
+    background-color: #a0d1a4; 
+    transform: translateY(-2px); 
 }
 
-/* Additional styles for the modal links */
 .modal-content ul li a {
-    color: #b7e1c0; /* Matches the link color */
-    text-decoration: none; /* Removes underline */
-    font-weight: 600; /* Makes the text bold */
-    transition: color 0.3s; /* Smooth transition for hover effects */
+    color: #b7e1c0; 
+    text-decoration: none;
+    font-weight: 600; 
+    transition: color 0.3s; 
 }
 
 .modal-content ul li a:hover {
-    color: #a0d1a4; /* Slightly darker green on hover */
+    color: #a0d1a4; 
 }
     .current::before {
         content: "current: ";
-        color: white; /* Set the color of the "current:" text */
+        color: white; 
         font-weight: bold;
     }
