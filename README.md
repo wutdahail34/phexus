@@ -16,10 +16,11 @@ In summary, you are free to share and host the *games* themselves, but you must 
 
 For any questions or clarification regarding these usage terms, please open an issue on the offical repository. Link can be found [here](https://github.com/phexus23/phexus23.github.io)
 
-## Links 
+# Links
 
-For questions about any official links, here they are. 
-maxwellstevenson.com
-class44x.github.io
-ph4xus.github.io
-phexus.bitbucket.io (does not always receive the latest updates)
+Here are the official links for your reference:
+
+* **Main Link:** [maxwellstevenson.com](maxwellstevenson.com)
+* **Class44x:** [class44x.github.io](class44x.github.io)
+* **Github:** [ph4xus.github.io](ph4xus.github.io)
+* **Bitbucket** [phexus.bitbucket.io](phexus.bitbucket.io) 
