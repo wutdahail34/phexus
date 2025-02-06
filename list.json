@@ -460,5 +460,11 @@
         "imgsrc": "/assets/img/rocketpult.png",
         "linksrc": "/Vafor_IT/rocketpult/",
         "foldername": "rocket-pult"
+    },
+    {
+        "name": "Block Blast",
+        "imgsrc": "/assets/img/blockblast.jpeg",
+        "linksrc": "/Vafor_IT/blockblast/",
+        "foldername": "block-blast"
     }
 ]
