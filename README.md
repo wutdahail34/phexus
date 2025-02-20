@@ -1,1 +1,1 @@
-no
+add gun spin and tetris
