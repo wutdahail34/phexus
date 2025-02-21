@@ -472,5 +472,11 @@
         "imgsrc": "/assets/img/moto.jfif",
         "linksrc": "/Vafor_IT/mx3m",
         "foldername": "motor-x3m"
+    },
+    {
+        "name": "Motor X3m Winter",
+        "imgsrc": "/assets/img/moto-x3m-winter.jpeg",
+        "linksrc": "/Vafor_IT/mx3mWinter",
+        "foldername": "motor-x3m-winter"
     }
 ]
