@@ -54,10 +54,10 @@
         "foldername": "yohoho.io"
     },
     {
-        "name": "Motor X3m",
-        "imgsrc": "/assets/img/moto.jfif",
-        "linksrc": "/Vafor_IT/mx3m",
-        "foldername": "motor-x3m"
+        "name": "Gun Spin",
+        "imgsrc": "/assets/img/gunspin.png",
+        "linksrc": "/Vafor_IT/gunspin",
+        "foldername": "gunspin"
     },
     {
         "name": "Monkey Mart",
@@ -466,5 +466,11 @@
         "imgsrc": "/assets/img/blockblast.jpeg",
         "linksrc": "/Vafor_IT/blockblast/",
         "foldername": "block-blast"
+    },
+    {
+        "name": "Motor X3m",
+        "imgsrc": "/assets/img/moto.jfif",
+        "linksrc": "/Vafor_IT/mx3m",
+        "foldername": "motor-x3m"
     }
 ]
