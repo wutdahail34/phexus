@@ -468,15 +468,28 @@
         "foldername": "block-blast"
     },
     {
-        "name": "Motor X3m",
+        "name": "Moto X3m",
         "imgsrc": "/assets/img/moto.jfif",
         "linksrc": "/Vafor_IT/mx3m",
-        "foldername": "motor-x3m"
+        "foldername": "moto-x3m"
     },
     {
-        "name": "Motor X3m Winter",
+        "name": "Moto X3m Winter",
         "imgsrc": "/assets/img/moto-x3m-winter.jpeg",
         "linksrc": "/Vafor_IT/mx3m-winter",
-        "foldername": "motor-x3m-winter"
+        "foldername": "moto-x3m-winter"
+    },
+    {
+        "name": "Moto X3m Spookyland",
+        "imgsrc": "/assets/img/spookyland.png",
+        "linksrc": "/Vafor_IT/mx3m-spookyland",
+        "foldername": "moto-x3m-spookyland"
+    },
+    {
+        "name": "Moto X3m Pool Party",
+        "imgsrc": "/assets/img/PoolParty.png",
+        "linksrc": "/Vafor_IT/mx3m-poolparty",
+        "foldername": "moto-x3m-pool-party"
     }
+
 ]
