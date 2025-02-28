@@ -332,6 +332,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetchRecommendedGames();
 });
+function loadAdsUnderSections() {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3858578074050552";
+    script.crossOrigin = "anonymous";
+    document.head.appendChild(script);
+
+    const appendAd = (target) => {
+        const ad = document.createElement('ins');
+        ad.classList.add('adsbygoogle');
+        ad.style.display = 'block';
+        ad.setAttribute('data-ad-client', 'ca-pub-3858578074050552');
+        ad.setAttribute('data-ad-slot', '3817988366');
+        ad.setAttribute('data-ad-format', 'auto');
+        ad.setAttribute('data-full-width-responsive', 'true');
+        target.parentNode.insertBefore(ad, target.nextSibling);
+        target.parentNode.insertBefore(ad.cloneNode(true), ad.nextSibling);
+    };
+
+    script.onload = () => {
+        ['.fullscreen-strip', '.recommended-games'].forEach(selector => {
+            const target = document.querySelector(selector);
+            if (target) appendAd(target);
+        });
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    };
+}
+loadAdsUnderSections();
+
+
     function toggleFullscreen() {
         const iframe = document.getElementById('game-iframe');
         if (iframe.requestFullscreen) {
