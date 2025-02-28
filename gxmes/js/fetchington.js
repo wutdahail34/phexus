@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <i class="fas fa-expand"></i>
                 </button>
             </div>
-            <div class="recommended-games">
+            <div class="recommended-games" data-nosnippet>
                 <h3>Recommended Games</h3>
                 <div class="games-list" id="recommendedGames"></div>
             </div>
