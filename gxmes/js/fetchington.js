@@ -342,6 +342,8 @@ function loadAdsUnderSections() {
 
     // Function to create and append ads under a target element
     const appendAd = (target) => {
+        if (!target) return; // Ensure the target exists before proceeding
+        
         // Create the first ad container (ins element)
         const ad1 = document.createElement('ins');
         ad1.classList.add('adsbygoogle');
@@ -361,10 +363,14 @@ function loadAdsUnderSections() {
 
     // Once the script loads, append ads under both target sections
     script.onload = () => {
-        ['.fullscreen-strip', '.recommended-games'].forEach(selector => {
-            const target = document.querySelector(selector);
-            if (target) appendAd(target);
-        });
+        const fullscreenStrip = document.querySelector('.fullscreen-strip');
+        const recommendedGames = document.querySelector('.recommended-games');
+
+        // Append ads under the fullscreen strip if it exists
+        if (fullscreenStrip) appendAd(fullscreenStrip);
+        
+        // Append ads under the recommended games section if it exists
+        if (recommendedGames) appendAd(recommendedGames);
 
         // Initialize ads after appending the elements
         (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -373,6 +379,7 @@ function loadAdsUnderSections() {
 
 // Call the function to load ads
 loadAdsUnderSections();
+
 
 
 
