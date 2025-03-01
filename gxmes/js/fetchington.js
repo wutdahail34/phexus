@@ -278,34 +278,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     <i class="fas fa-expand"></i>
                 </button>
             </div>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3858578074050552"
-                 crossorigin="anonymous"></script>
-            <!-- footer -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-3858578074050552"
-                 data-ad-slot="3817988366"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
             <div class="recommended-games" data-nosnippet>
                 <h3>Recommended Games</h3>
                 <div class="games-list" id="recommendedGames"></div>
             </div>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3858578074050552"
-                 crossorigin="anonymous"></script>
-            <!-- footer -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-3858578074050552"
-                 data-ad-slot="3817988366"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
             <div class="keywords-section">
                 <div class="keywords">
                     <h3>Keywords:</h3>
