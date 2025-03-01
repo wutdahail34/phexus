@@ -356,10 +356,13 @@ function loadAdsUnderSections() {
             const target = document.querySelector(selector);
             if (target) appendAd(target);
         });
-        (adsbygoogle = window.adsbygoogle || []).push({});
+
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
     };
 }
+
 loadAdsUnderSections();
+
 
 
     function toggleFullscreen() {
