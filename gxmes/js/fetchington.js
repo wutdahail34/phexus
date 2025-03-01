@@ -333,34 +333,45 @@ document.addEventListener("DOMContentLoaded", function () {
     fetchRecommendedGames();
 });
 function loadAdsUnderSections() {
+    // Create and append the Google Ads script
     const script = document.createElement('script');
     script.async = true;
     script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3858578074050552";
     script.crossOrigin = "anonymous";
     document.head.appendChild(script);
 
+    // Function to create and append ads under a target element
     const appendAd = (target) => {
-        const ad = document.createElement('ins');
-        ad.classList.add('adsbygoogle');
-        ad.style.display = 'block';
-        ad.setAttribute('data-ad-client', 'ca-pub-3858578074050552');
-        ad.setAttribute('data-ad-slot', '3817988366');
-        ad.setAttribute('data-ad-format', 'auto');
-        ad.setAttribute('data-full-width-responsive', 'true');
-        target.parentNode.insertBefore(ad, target.nextSibling);
-        target.parentNode.insertBefore(ad.cloneNode(true), ad.nextSibling);
+        // Create the first ad container (ins element)
+        const ad1 = document.createElement('ins');
+        ad1.classList.add('adsbygoogle');
+        ad1.style.display = 'block';
+        ad1.setAttribute('data-ad-client', 'ca-pub-3858578074050552');
+        ad1.setAttribute('data-ad-slot', '3817988366');
+        ad1.setAttribute('data-ad-format', 'auto');
+        ad1.setAttribute('data-full-width-responsive', 'true');
+        
+        // Create the second ad container (clone of the first one)
+        const ad2 = ad1.cloneNode(true);
+
+        // Append both ads under the target element
+        target.parentNode.insertBefore(ad1, target.nextSibling);
+        target.parentNode.insertBefore(ad2, ad1.nextSibling);
     };
 
+    // Once the script loads, append ads under both target sections
     script.onload = () => {
         ['.fullscreen-strip', '.recommended-games'].forEach(selector => {
             const target = document.querySelector(selector);
             if (target) appendAd(target);
         });
 
+        // Initialize ads after appending the elements
         (window.adsbygoogle = window.adsbygoogle || []).push({});
     };
 }
 
+// Call the function to load ads
 loadAdsUnderSections();
 
 
