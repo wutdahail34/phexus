@@ -278,10 +278,34 @@ document.addEventListener("DOMContentLoaded", function () {
                     <i class="fas fa-expand"></i>
                 </button>
             </div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3858578074050552"
+                 crossorigin="anonymous"></script>
+            <!-- footer -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3858578074050552"
+                 data-ad-slot="3817988366"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
             <div class="recommended-games" data-nosnippet>
                 <h3>Recommended Games</h3>
                 <div class="games-list" id="recommendedGames"></div>
             </div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3858578074050552"
+                 crossorigin="anonymous"></script>
+            <!-- footer -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3858578074050552"
+                 data-ad-slot="3817988366"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
             <div class="keywords-section">
                 <div class="keywords">
                     <h3>Keywords:</h3>
@@ -332,56 +356,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetchRecommendedGames();
 });
-function loadAdsUnderSections() {
-    // Create and append the Google Ads script
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3858578074050552";
-    script.crossOrigin = "anonymous";
-    document.head.appendChild(script);
-
-    // Function to create and append ads under a target element
-    const appendAd = (target) => {
-        if (!target) return; // Ensure the target exists before proceeding
-        
-        // Create the first ad container (ins element)
-        const ad1 = document.createElement('ins');
-        ad1.classList.add('adsbygoogle');
-        ad1.style.display = 'block';
-        ad1.setAttribute('data-ad-client', 'ca-pub-3858578074050552');
-        ad1.setAttribute('data-ad-slot', '3817988366');
-        ad1.setAttribute('data-ad-format', 'auto');
-        ad1.setAttribute('data-full-width-responsive', 'true');
-        
-        // Create the second ad container (clone of the first one)
-        const ad2 = ad1.cloneNode(true);
-
-        // Append both ads under the target element
-        target.parentNode.insertBefore(ad1, target.nextSibling);
-        target.parentNode.insertBefore(ad2, ad1.nextSibling);
-    };
-
-    // Once the script loads, append ads under both target sections
-    script.onload = () => {
-        const fullscreenStrip = document.querySelector('.fullscreen-strip');
-        const recommendedGames = document.querySelector('.recommended-games');
-
-        // Append ads under the fullscreen strip if it exists
-        if (fullscreenStrip) appendAd(fullscreenStrip);
-        
-        // Append ads under the recommended games section if it exists
-        if (recommendedGames) appendAd(recommendedGames);
-
-        // Initialize ads after appending the elements
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-    };
-}
-
-// Call the function to load ads
-loadAdsUnderSections();
-
-
-
 
     function toggleFullscreen() {
         const iframe = document.getElementById('game-iframe');
