@@ -278,10 +278,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     <i class="fas fa-expand"></i>
                 </button>
             </div>
+            <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-3858578074050552"
+            data-ad-slot="3817988366"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
             <div class="recommended-games" data-nosnippet>
                 <h3>Recommended Games</h3>
                 <div class="games-list" id="recommendedGames"></div>
             </div>
+            <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-3858578074050552"
+            data-ad-slot="3817988366"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
             <div class="keywords-section">
                 <div class="keywords">
                     <h3>Keywords:</h3>
@@ -345,3 +357,6 @@ document.addEventListener("DOMContentLoaded", function () {
             iframe.msRequestFullscreen();
         }
     }
+    
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
