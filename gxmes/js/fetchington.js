@@ -327,7 +327,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 gameCard.className = 'game-card';
                 gameCard.innerHTML = `
                     <a href="/gxmes/${game.foldername}">
-                    <img src="https://ph4xus.github.io/${game.imgsrc}" alt="${game.name}">
+                    <img src="/${game.imgsrc}" alt="${game.name}">
                     <p>${game.name}</p>
                     </a>
                 `;
