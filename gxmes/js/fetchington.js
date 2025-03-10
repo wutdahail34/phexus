@@ -357,6 +357,3 @@ document.addEventListener("DOMContentLoaded", function () {
             iframe.msRequestFullscreen();
         }
     }
-    
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    (adsbygoogle = window.adsbygoogle || []).push({});
