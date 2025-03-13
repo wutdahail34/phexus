@@ -496,6 +496,12 @@
         "imgsrc": "/assets/img/eggycar.png",
         "linksrc": "/Vafor_IT/eggycar",
         "foldername": "eggycar"
+    },
+    {
+        "name": "Bob the robber",
+        "imgsrc": "/assets/img/bob.jpg",
+        "linksrc": "/Vafor_IT/BobTheRobber4",
+        "foldername": "bob-the-robber"
     }
 
 ]
