@@ -500,8 +500,14 @@
     {
         "name": "Bob the robber",
         "imgsrc": "/assets/img/bob.jpg",
-        "linksrc": "/Vafor_IT/BobTheRobber4",
+        "linksrc": "/Vafor_IT/BobTheRobber",
         "foldername": "bob-the-robber"
+    },
+    {
+        "name": "Bob the robber 4",
+        "imgsrc": "/assets/img/bob4.jpg",
+        "linksrc": "/Vafor_IT/BobTheRobber4",
+        "foldername": "bob-the-robber-4"
     }
 
 ]
