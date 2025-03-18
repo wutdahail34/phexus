@@ -520,6 +520,12 @@
         "imgsrc": "/assets/img/bob4.jpg",
         "linksrc": "/Vafor_IT/BobTheRobber4",
         "foldername": "bob-the-robber-4"
+    },
+    {
+        "name": "2048",
+        "imgsrc": "/assets/img/2048.png",
+        "linksrc": "/Vafor_IT/2048",
+        "foldername": "2048"
     }
 
 ]
