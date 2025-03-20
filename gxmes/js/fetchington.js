@@ -9,12 +9,20 @@ async function fetchData(index) {
 
         console.log("name", name1);
         console.log("src", src);
+        var allowedsites = ["maxwellstevenson.com", "phexus.netlify.app", "ph4xus.github.io", "phexus.bitbucket.io"];
 
+        let windoworigin = window.location.host;
+        let SiteText = "maxwellstevenson.com";
+        
+        if (allowedsites.includes(windoworigin)) {
+            let SiteText = window.location.host
+            console.log(SiteText)
+        }
         const iframe = document.getElementById('game-iframe');    
         iframe.src = src;
         const image = document.getElementById('bottomimage');
         image.src = imgsrc; 
-        document.getElementById('gameTitle').textContent = 'Play ' + name1 + ' on maxwellstevenson.com';
+        document.getElementById('gameTitle').textContent = 'Play ' + name1 + ' on ' + SiteText;
         document.title = 'Play ' + name1 + ' on maxwellstevenson.com';
         const imgSrc = imgsrc; document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'icon', href: imgSrc, id: 'faviconLink' }));
         const keywords = 'gxme, gxmes, ' + name1 + ' unblxcked, ' + name1 + ' maxwellstevenson.com, Vafor, Vafor IT, ' + name1 + ', ' + name1 + ' ' + 'school' + ', github gxmes, github ' + name1;
