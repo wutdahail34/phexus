@@ -526,6 +526,12 @@
         "imgsrc": "/assets/img/2048.png",
         "linksrc": "/Vafor_IT/2048",
         "foldername": "2048"
+    },
+    {
+        "name": "tetris",
+        "imgsrc": "/assets/img/tetris.png",
+        "linksrc": "/Vafor_IT/tetris",
+        "foldername": "tetris"
     }
 
 ]
