@@ -12,10 +12,10 @@ async function fetchData(index) {
         var allowedsites = ["maxwellstevenson.com", "phexus.netlify.app", "ph4xus.github.io", "phexus.bitbucket.io"];
 
         let windoworigin = window.location.host;
-        let SiteText = "maxwellstevenson.com";
+        var SiteText = "maxwellstevenson.com";
         
         if (allowedsites.includes(windoworigin)) {
-            let SiteText = window.location.host
+            SiteText = window.location.host
             console.log(SiteText)
         }
         const iframe = document.getElementById('game-iframe');    
