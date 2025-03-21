@@ -49,6 +49,8 @@ async function fetchData(index) {
         console.error('Fetch error:', error);
     }
 }
+(adsbygoogle = window.adsbygoogle || []).push({});
+(adsbygoogle = window.adsbygoogle || []).push({});
 document.addEventListener("DOMContentLoaded", function () {
     const link2 = document.createElement("link");
     link2.rel = "stylesheet";
