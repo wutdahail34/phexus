@@ -316,6 +316,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
         </div>
+        <div>
+            <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-3858578074050552"
+            data-ad-slot="3817988366"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        </div>
         <footer>
             <p>© 2025 Vafor IT. All Rights Reserved.</p>
         </footer>
@@ -357,6 +365,8 @@ document.addEventListener("DOMContentLoaded", function () {
     fetchRecommendedGames();
     (adsbygoogle = window.adsbygoogle || []).push({});
     (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
 });
 
     function toggleFullscreen() {
