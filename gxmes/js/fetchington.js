@@ -56,8 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(link2);
 
     const bodyTag = document.body;
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    (adsbygoogle = window.adsbygoogle || []).push({});
     bodyTag.innerHTML = `
         <style>
              * {
