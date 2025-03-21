@@ -9,12 +9,20 @@ async function fetchData(index) {
 
         console.log("name", name1);
         console.log("src", src);
+        var allowedsites = ["maxwellstevenson.com", "phexus.netlify.app", "ph4xus.github.io", "phexus.bitbucket.io"];
 
+        let windoworigin = window.location.host;
+        var SiteText = "maxwellstevenson.com";
+        
+        if (allowedsites.includes(windoworigin)) {
+            SiteText = window.location.host
+            console.log(SiteText)
+        }
         const iframe = document.getElementById('game-iframe');    
         iframe.src = src;
         const image = document.getElementById('bottomimage');
         image.src = imgsrc; 
-        document.getElementById('gameTitle').textContent = 'Play ' + name1 + ' on maxwellstevenson.com';
+        document.getElementById('gameTitle').textContent = 'Play ' + name1 + ' on ' + SiteText;
         document.title = 'Play ' + name1 + ' on maxwellstevenson.com';
         const imgSrc = imgsrc; document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'icon', href: imgSrc, id: 'faviconLink' }));
         const keywords = 'gxme, gxmes, ' + name1 + ' unblxcked, ' + name1 + ' maxwellstevenson.com, Vafor, Vafor IT, ' + name1 + ', ' + name1 + ' ' + 'school' + ', github gxmes, github ' + name1;
@@ -278,10 +286,22 @@ document.addEventListener("DOMContentLoaded", function () {
                     <i class="fas fa-expand"></i>
                 </button>
             </div>
-            <div class="recommended-games">
+            <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-3858578074050552"
+            data-ad-slot="3817988366"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+            <div class="recommended-games" data-nosnippet>
                 <h3>Recommended Games</h3>
                 <div class="games-list" id="recommendedGames"></div>
             </div>
+            <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-3858578074050552"
+            data-ad-slot="3817988366"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
             <div class="keywords-section">
                 <div class="keywords">
                     <h3>Keywords:</h3>
@@ -315,7 +335,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 gameCard.className = 'game-card';
                 gameCard.innerHTML = `
                     <a href="/gxmes/${game.foldername}">
-                    <img src="https://ph4xus.github.io/${game.imgsrc}" alt="${game.name}">
+                    <img src="${game.imgsrc}" alt="${game.name}">
                     <p>${game.name}</p>
                     </a>
                 `;
@@ -332,6 +352,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetchRecommendedGames();
 });
+
     function toggleFullscreen() {
         const iframe = document.getElementById('game-iframe');
         if (iframe.requestFullscreen) {

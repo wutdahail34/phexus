@@ -54,10 +54,10 @@
         "foldername": "yohoho.io"
     },
     {
-        "name": "Motor X3m",
-        "imgsrc": "/assets/img/moto.jfif",
-        "linksrc": "/Vafor_IT/mx3m",
-        "foldername": "motor-x3m"
+        "name": "Gun Spin",
+        "imgsrc": "/assets/img/gunspin.png",
+        "linksrc": "/Vafor_IT/gunspin",
+        "foldername": "gunspin"
     },
     {
         "name": "Monkey Mart",
@@ -466,5 +466,72 @@
         "imgsrc": "/assets/img/blockblast.jpeg",
         "linksrc": "/Vafor_IT/blockblast/",
         "foldername": "block-blast"
+    },
+    {
+        "name": "Moto X3m",
+        "imgsrc": "/assets/img/moto.jfif",
+        "linksrc": "/Vafor_IT/mx3m",
+        "foldername": "moto-x3m"
+    },
+    {
+        "name": "Moto X3m Winter",
+        "imgsrc": "/assets/img/moto-x3m-winter.jpeg",
+        "linksrc": "/Vafor_IT/mx3m-winter",
+        "foldername": "moto-x3m-winter"
+    },
+    {
+        "name": "Moto X3m Spookyland",
+        "imgsrc": "/assets/img/spookyland.png",
+        "linksrc": "/Vafor_IT/mx3m-spookyland",
+        "foldername": "moto-x3m-spookyland"
+    },
+    {
+        "name": "Moto X3m Pool Party",
+        "imgsrc": "/assets/img/poolparty.png",
+        "linksrc": "/Vafor_IT/mx3m-poolparty",
+        "foldername": "moto-x3m-pool-party"
+    },
+    {
+        "name": "Eggy car",
+        "imgsrc": "/assets/img/eggycar.png",
+        "linksrc": "/Vafor_IT/eggycar",
+        "foldername": "eggycar"
+    },
+        {
+        "name": "Bob the robber",
+        "imgsrc": "/assets/img/bob.jpg",
+        "linksrc": "/Vafor_IT/BobTheRobber",
+        "foldername": "bob-the-robber"
+    },
+    {
+        "name": "Bob the robber 2",
+        "imgsrc": "/assets/img/bob2.jpeg",
+        "linksrc": "/Vafor_IT/BobTheRobber2",
+        "foldername": "bob-the-robber-2"
+    },
+    {
+        "name": "Bob the robber 3",
+        "imgsrc": "/assets/img/bob3.jfif",
+        "linksrc": "/Vafor_IT/BobTheRobber3",
+        "foldername": "bob-the-robber-3"
+    },
+    {
+        "name": "Bob the robber 4",
+        "imgsrc": "/assets/img/bob4.jpg",
+        "linksrc": "/Vafor_IT/BobTheRobber4",
+        "foldername": "bob-the-robber-4"
+    },
+    {
+        "name": "2048",
+        "imgsrc": "/assets/img/2048.png",
+        "linksrc": "/Vafor_IT/2048",
+        "foldername": "2048"
+    },
+    {
+        "name": "tetris",
+        "imgsrc": "/assets/img/tetris.png",
+        "linksrc": "/Vafor_IT/tetris",
+        "foldername": "tetris"
     }
+
 ]
