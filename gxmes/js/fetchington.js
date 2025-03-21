@@ -56,6 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(link2);
 
     const bodyTag = document.body;
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
     bodyTag.innerHTML = `
         <style>
              * {
@@ -369,7 +371,3 @@ document.addEventListener("DOMContentLoaded", function () {
             iframe.msRequestFullscreen();
         }
     }
-//push the ads bro 
-
-     (adsbygoogle = window.adsbygoogle || []).push({});
-     (adsbygoogle = window.adsbygoogle || []).push({});
