@@ -311,6 +311,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <i class="fas fa-expand"></i>
                 </button>
             </div>
+            <!--
             <div class="unique-sidebar left-sidebar">
                 <div class="ad-preview"> 
                     <ins class="adsbygoogle"
@@ -321,6 +322,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     data-full-width-responsive="true"></ins>
                 </div>
             </div>
+            -->
             <div>      
             <ins class="adsbygoogle"
             style="display:block"
@@ -401,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function () {
     (adsbygoogle = window.adsbygoogle || []).push({});
     (adsbygoogle = window.adsbygoogle || []).push({});
     (adsbygoogle = window.adsbygoogle || []).push({});
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    //(adsbygoogle = window.adsbygoogle || []).push({});
 
 });
 
