@@ -26,15 +26,7 @@ function iAdUnpause() {
 
 
 function requestNewAd() {
-    //console.log("requested AD")
-    //console.log(iAd)
-    if (iAd && iAd.isLoaded()) {
-        iAd.show(); //Show loaded ad   
-    }
-    else {
-        if (iAd) iAd.load(); //If no ad available, load another      
-        unityAdFinishedCallback()
-    }
+
 }
 
 // This function calls Unity to tell the ad finished
