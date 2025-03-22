@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 text-align: center;
             }
           .unique-sidebar { 
-            width: 300px; 
+            width:150px; 
             background: #444; 
             padding: 20px; 
             border-radius: 10px; 
