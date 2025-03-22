@@ -25,7 +25,7 @@ async function fetchData(index) {
         document.getElementById('gameTitle').textContent = 'Play ' + name1 + ' on ' + SiteText;
         document.title = 'Play ' + name1 + ' on maxwellstevenson.com';
         const imgSrc = imgsrc; document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'icon', href: imgSrc, id: 'faviconLink' }));
-        const keywords = 'gxme, gxmes, ' + name1 + ' unblxcked, ' + name1 + ' maxwellstevenson.com, Vafor, Vafor IT, ' + name1 + ', ' + name1 + ' ' + 'school' + ', github gxmes, github ' + name1;
+        const keywords = 'gxme, gxmes, ' + name1 + ' unblocked, ' + name1 + ' ' + SiteText + ', Vafor, Vafor IT, ' + name1 + ', ' + name1 + ' school, github gxmes, github ' + name1;
         var meta = document.createElement('meta');
         meta.name = 'description';
         meta.content = 'Play ' + name1 + ' on maxwellstevenson.com';
@@ -272,6 +272,9 @@ document.addEventListener("DOMContentLoaded", function () {
             footer a:hover {
                 color: #a0d1a4;
             }
+            .center-adsense {
+                align: center;
+            }
         </style>
         <header>
             <a class="title" href="/gxmes">Vafor</a>
@@ -316,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
         </div>
-        <div>
+        <div class="center-adsense">
             <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-3858578074050552"
