@@ -371,6 +371,59 @@ document.addEventListener("DOMContentLoaded", function () {
     (adsbygoogle = window.adsbygoogle || []).push({});
 
 });
+function addStyles() {
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .unique-sidebar { 
+            width: 300px; 
+            background: #444; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+            position: sticky; 
+            top: 20px; 
+            height: 300px;
+            box-sizing: border-box; 
+        }
+        .unique-sidebar .ad-preview {
+            background: #333; 
+            color: #eaeaea; 
+            padding: 10px; 
+            margin-top: 10px; 
+            border-radius: 8px; 
+            text-align: center; 
+            margin: 10px 0; 
+        }
+        .left-sidebar { margin-left: 20px; }
+        .right-sidebar { margin-right: 20px; }
+    `;
+    document.head.appendChild(style);
+}
+
+function createSidebar(side) {
+    const sidebar = document.createElement('div');
+    sidebar.classList.add('unique-sidebar', side);
+    sidebar.innerHTML = `
+    <div class="ad-preview"> 
+        <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-3858578074050552"
+        data-ad-slot="8667470266"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+     </div>
+    `;
+    document.querySelector('.content').appendChild(sidebar);
+}
+
+addStyles();
+
+createSidebar('left-sidebar');
+createSidebar('right-sidebar');
+(adsbygoogle = window.adsbygoogle || []).push({});
+(adsbygoogle = window.adsbygoogle || []).push({});
+
+
 
     function toggleFullscreen() {
         const iframe = document.getElementById('game-iframe');
