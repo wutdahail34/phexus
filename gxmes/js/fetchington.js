@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 color: #a0d1a4;
             }
             .center-adsense {
-                align: center;
+                text-align: center;
             }
         </style>
         <header>
