@@ -25,7 +25,7 @@ async function fetchData(index) {
         document.getElementById('gameTitle').textContent = 'Play ' + name1 + ' on ' + SiteText;
         document.title = 'Play ' + name1 + ' on maxwellstevenson.com';
         const imgSrc = imgsrc; document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'icon', href: imgSrc, id: 'faviconLink' }));
-        const keywords = 'gxme, gxmes, ' + name1 + ' unblxcked, ' + name1 + ' maxwellstevenson.com, Vafor, Vafor IT, ' + name1 + ', ' + name1 + ' ' + 'school' + ', github gxmes, github ' + name1;
+        const keywords = 'gxme, gxmes, ' + name1 + ' unblocked, ' + name1 + ' ' + SiteText + ', Vafor, Vafor IT, ' + name1 + ', ' + name1 + ' school, github gxmes, github ' + name1;
         var meta = document.createElement('meta');
         meta.name = 'description';
         meta.content = 'Play ' + name1 + ' on maxwellstevenson.com';
@@ -272,6 +272,9 @@ document.addEventListener("DOMContentLoaded", function () {
             footer a:hover {
                 color: #a0d1a4;
             }
+            .center-adsense {
+                text-align: center;
+            }
         </style>
         <header>
             <a class="title" href="/gxmes">Vafor</a>
@@ -286,22 +289,26 @@ document.addEventListener("DOMContentLoaded", function () {
                     <i class="fas fa-expand"></i>
                 </button>
             </div>
+            <div>      
             <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-3858578074050552"
             data-ad-slot="3817988366"
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
+            </div>
             <div class="recommended-games" data-nosnippet>
                 <h3>Recommended Games</h3>
                 <div class="games-list" id="recommendedGames"></div>
             </div>
+            <div>
             <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-3858578074050552"
             data-ad-slot="3817988366"
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
+            </div>
             <div class="keywords-section">
                 <div class="keywords">
                     <h3>Keywords:</h3>
@@ -311,6 +318,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     <img id="bottomimage">
                 </div>
             </div>
+        </div>
+        <div class="center-adsense">
+            <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-3858578074050552"
+            data-ad-slot="3817988366"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
         </div>
         <footer>
             <p>© 2025 Vafor IT. All Rights Reserved.</p>
@@ -349,8 +364,12 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('resize', fetchRecommendedGames);
 
 
-
+    
     fetchRecommendedGames();
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    (adsbygoogle = window.adsbygoogle || []).push({});
+
 });
 
     function toggleFullscreen() {
