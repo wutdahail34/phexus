@@ -276,12 +276,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 text-align: center;
             }
           .unique-sidebar { 
-            width: 150px; 
+            width: 300px; 
             background: #444; 
             padding: 20px; 
             border-radius: 10px; 
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
             position: sticky; 
+            top: 20px; 
+            height: 300px;
             box-sizing: border-box; 
         }
         .unique-sidebar .ad-preview {
