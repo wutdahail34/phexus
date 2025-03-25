@@ -1,1 +1,1 @@
-add tetris
+New UIX for game page + sidebar ads. 
