@@ -304,7 +304,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 text-align: center;
             }
           .unique-sidebar { 
-            width:150px; 
+            width:10%; 
             background: #444; 
             padding: 20px; 
             border-radius: 10px; 
@@ -323,8 +323,6 @@ document.addEventListener("DOMContentLoaded", function () {
             text-align: center; 
             margin: 10px 0; 
         }
-        .left-sidebar { margin-left: 20px; }
-        .right-sidebar { margin-right: 20px; }
         </style>
         <header>
             <a class="title" href="/gxmes">Vafor</a>
