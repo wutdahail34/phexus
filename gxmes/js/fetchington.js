@@ -309,7 +309,7 @@ document.addEventListener("DOMContentLoaded", function () {
             padding: 20px; 
             border-radius: 10px; 
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
-            position: sticky; 
+            position: absolute; 
             top: 20px; 
             height: 300px;
             box-sizing: border-box; 
