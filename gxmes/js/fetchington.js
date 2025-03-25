@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </button>
             </div>
             <!--
-            <div class="unique-sidebar left-sidebar">
+            <div class="unique-sidebar">
                 <div class="ad-preview"> 
                     <ins class="adsbygoogle"
                     style="display:block"
