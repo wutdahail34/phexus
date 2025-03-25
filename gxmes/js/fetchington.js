@@ -49,6 +49,34 @@ async function fetchData(index) {
         console.error('Fetch error:', error);
     }
 }
+    async function fetchRecommendedGames() {
+        try {
+            const response = await fetch('/list.json');
+            const data = await response.json();
+            const recommendedGamesContainer = document.getElementById('recommendedGames');
+            recommendedGamesContainer.innerHTML = ''; 
+
+            const cardWidth = 220; 
+            const containerWidth = recommendedGamesContainer.clientWidth;
+            const cardsPerRow = Math.floor(containerWidth / cardWidth);
+
+            const shuffledGames = data.sort(() => 0.5 - Math.random()).slice(0, cardsPerRow);
+
+            shuffledGames.forEach(game => {
+                const gameCard = document.createElement('div');
+                gameCard.className = 'game-card';
+                gameCard.innerHTML = `
+                    <a href="/gxmes/${game.foldername}">
+                    <img src="${game.imgsrc}" alt="${game.name}">
+                    <p>${game.name}</p>
+                    </a>
+                `;
+                recommendedGamesContainer.appendChild(gameCard);
+            });
+        } catch (error) {
+            console.error('Error fetching recommended games:', error);
+        }
+    }
 document.addEventListener("DOMContentLoaded", function () {
     const link2 = document.createElement("link");
     link2.rel = "stylesheet";
@@ -365,35 +393,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>© 2025 Vafor IT. All Rights Reserved.</p>
         </footer>
     `;
-
-    async function fetchRecommendedGames() {
-        try {
-            const response = await fetch('/list.json');
-            const data = await response.json();
-            const recommendedGamesContainer = document.getElementById('recommendedGames');
-            recommendedGamesContainer.innerHTML = ''; 
-
-            const cardWidth = 220; 
-            const containerWidth = recommendedGamesContainer.clientWidth;
-            const cardsPerRow = Math.floor(containerWidth / cardWidth);
-
-            const shuffledGames = data.sort(() => 0.5 - Math.random()).slice(0, cardsPerRow);
-
-            shuffledGames.forEach(game => {
-                const gameCard = document.createElement('div');
-                gameCard.className = 'game-card';
-                gameCard.innerHTML = `
-                    <a href="/gxmes/${game.foldername}">
-                    <img src="${game.imgsrc}" alt="${game.name}">
-                    <p>${game.name}</p>
-                    </a>
-                `;
-                recommendedGamesContainer.appendChild(gameCard);
-            });
-        } catch (error) {
-            console.error('Error fetching recommended games:', error);
-        }
-    }
 
     window.addEventListener('resize', fetchRecommendedGames);
 
