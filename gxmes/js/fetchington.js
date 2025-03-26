@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             .game-iframe {
-                width: 70%;
+                width: 80%;
                 height: 70vh;
                 border: none;
                 border-radius: 10px 10px 0 0;
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             .fullscreen-strip {
-                width: 70%;
+                width: 80%;
                 background-color: #555;
                 padding: 5px 20px;
                 display: flex;
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             .recommended-games {
-                width: 70%;
+                width: 80%;
                 margin: 0 auto 20px;
                 background-color: #3e3e3e;
                 padding: 20px;
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 padding: 20px;
                 border-radius: 10px;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-                width: 70%;
+                width: 80%;
                 margin: 0 auto;
             }
 
@@ -324,7 +324,7 @@ document.addEventListener("DOMContentLoaded", function () {
             margin: 10px 0; 
         }
         .ads-width {
-            width:70%
+            width:80%
         }
         </style>
         <header>
