@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             .game-iframe {
-                width: 80%;
+                width: 70%;
                 height: 70vh;
                 border: none;
                 border-radius: 10px 10px 0 0;
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             .fullscreen-strip {
-                width: 80%;
+                width: 70%;
                 background-color: #555;
                 padding: 5px 20px;
                 display: flex;
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             .recommended-games {
-                width: 80%;
+                width: 70%;
                 margin: 0 auto 20px;
                 background-color: #3e3e3e;
                 padding: 20px;
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 padding: 20px;
                 border-radius: 10px;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-                width: 80%;
+                width: 70%;
                 margin: 0 auto;
             }
 
@@ -310,8 +310,8 @@ document.addEventListener("DOMContentLoaded", function () {
             border-radius: 10px; 
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
             position: absolute; 
-            top: 20px; 
-            height: 300px;
+            top: 170px; 
+            height: 70vh;
             box-sizing: border-box; 
         }
         .unique-sidebar .ad-preview {
@@ -322,6 +322,9 @@ document.addEventListener("DOMContentLoaded", function () {
             border-radius: 8px; 
             text-align: center; 
             margin: 10px 0; 
+        }
+        .ads-width {
+            width:70%
         }
         </style>
         <header>
@@ -349,7 +352,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
             -->
-            <div>      
+            <div class="ads-width">      
             <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-3858578074050552"
@@ -361,7 +364,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3>Recommended Games</h3>
                 <div class="games-list" id="recommendedGames"></div>
             </div>
-            <div>
+            <div class="ads-width">
             <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-3858578074050552"
@@ -379,7 +382,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
         </div>
-        <div class="center-adsense">
+        <div class="center-adsense ads-width">
             <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-3858578074050552"
