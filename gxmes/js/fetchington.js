@@ -326,6 +326,15 @@ document.addEventListener("DOMContentLoaded", function () {
         .ads-width {
             width:80%
         }
+        .adbar-left {
+            left:0;
+            margin-left:7px;
+
+        }
+        .adbar-right {
+            right:0;
+            margin-right:7px;
+        }
         </style>
         <header>
             <a class="title" href="/gxmes">Vafor</a>
@@ -341,7 +350,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 </button>
             </div>
             <!--
-            <div class="unique-sidebar">
+            <div class="unique-sidebar adbar-left">
+                <div class="ad-preview"> 
+                    <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-3858578074050552"
+                    data-ad-slot="8667470266"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                </div>
+            </div>
+            <div class="unique-sidebar adbar-right">
                 <div class="ad-preview"> 
                     <ins class="adsbygoogle"
                     style="display:block"
