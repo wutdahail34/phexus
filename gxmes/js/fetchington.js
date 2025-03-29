@@ -323,9 +323,6 @@ document.addEventListener("DOMContentLoaded", function () {
             text-align: center; 
             margin: 10px 0; 
         }
-        .ads-width {
-            width:80%
-        }
         .adbar-left {
             left:0;
             margin-left:7px;
@@ -371,7 +368,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
             -->
-            <div class="ads-width">      
+            <div>      
             <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-3858578074050552"
@@ -383,7 +380,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3>Recommended Games</h3>
                 <div class="games-list" id="recommendedGames"></div>
             </div>
-            <div class="ads-width">
+            <div>
             <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-3858578074050552"
@@ -401,7 +398,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
         </div>
-        <div class="center-adsense ads-width">
+        <div class="center-adsense">
             <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-3858578074050552"
