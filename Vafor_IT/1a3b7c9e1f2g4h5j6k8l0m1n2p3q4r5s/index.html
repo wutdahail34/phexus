@@ -222,9 +222,9 @@
       var refreshNextTime = true;
 
       function showAds() {
-        document.getElementsByClassName("ad-rectangle-bottom")[0].style.display = "block";
-        document.getElementsByClassName("ad-leaderboard-bottom")[0].style.display = "block";
-        document.getElementById("adRectangleUpper").style.display = "block";
+        document.getElementsByClassName("ad-rectangle-bottom")[0].style.display = "none";
+        document.getElementsByClassName("ad-leaderboard-bottom")[0].style.display = "none";
+        document.getElementById("adRectangleUpper").style.display = "none";
 
         if (typeof counter === "undefined") {
           startCounter();
