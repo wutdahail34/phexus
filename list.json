@@ -544,6 +544,12 @@
         "imgsrc": "/assets/img/snakemlg.jfif",
         "linksrc": "/Vafor_IT/snakemlg",
         "foldername": "snake-is-mlg"
+    },
+    {
+        "name": "Tower of Destiny",
+        "imgsrc": "/assets/img/towerofdestiny.png",
+        "linksrc": "/Vafor_IT/TowerOfDestiny",
+        "foldername": "tower-of-destiny"
     }
 
 ]
