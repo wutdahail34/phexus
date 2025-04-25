@@ -538,6 +538,12 @@
         "imgsrc": "/assets/img/crazycattle.jpg",
         "linksrc": "/Vafor_IT/crazycattle",
         "foldername": "crazy-cattle"
+    },
+    {
+        "name": "Snake is mlg edition",
+        "imgsrc": "/assets/img/snakemlg.jpeg",
+        "linksrc": "/Vafor_IT/snakemlg",
+        "foldername": "snake-is-mlg"
     }
 
 ]
