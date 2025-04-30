@@ -556,6 +556,12 @@
         "imgsrc": "/assets/img/highway.jpg",
         "linksrc": "/Vafor_IT/highway-traffic",
         "foldername": "highway-traffic"
+    },
+    {
+        "name": "Crossy Road",
+        "imgsrc": "/assets/img/crossyroad.jpeg",
+        "linksrc": "/Vafor_IT/crossyroad",
+        "foldername": "crossyroad"
     }
 
 ]
