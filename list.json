@@ -550,6 +550,12 @@
         "imgsrc": "/assets/img/towerofdestiny.png",
         "linksrc": "/Vafor_IT/TowerOfDestiny",
         "foldername": "tower-of-destiny"
+    },
+    {
+        "name": "Highway Traffic",
+        "imgsrc": "/assets/img/highway.jpg",
+        "linksrc": "/Vafor_IT/highway-traffic",
+        "foldername": "highway-traffic"
     }
 
 ]
