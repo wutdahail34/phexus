@@ -49,6 +49,34 @@ async function fetchData(index) {
         console.error('Fetch error:', error);
     }
 }
+    async function fetchRecommendedGames() {
+        try {
+            const response = await fetch('/list.json');
+            const data = await response.json();
+            const recommendedGamesContainer = document.getElementById('recommendedGames');
+            recommendedGamesContainer.innerHTML = ''; 
+
+            const cardWidth = 220; 
+            const containerWidth = recommendedGamesContainer.clientWidth;
+            const cardsPerRow = Math.floor(containerWidth / cardWidth);
+
+            const shuffledGames = data.sort(() => 0.5 - Math.random()).slice(0, cardsPerRow);
+
+            shuffledGames.forEach(game => {
+                const gameCard = document.createElement('div');
+                gameCard.className = 'game-card';
+                gameCard.innerHTML = `
+                    <a href="/gxmes/${game.foldername}">
+                    <img src="${game.imgsrc}" alt="${game.name}">
+                    <p>${game.name}</p>
+                    </a>
+                `;
+                recommendedGamesContainer.appendChild(gameCard);
+            });
+        } catch (error) {
+            console.error('Error fetching recommended games:', error);
+        }
+    }
 document.addEventListener("DOMContentLoaded", function () {
     const link2 = document.createElement("link");
     link2.rel = "stylesheet";
@@ -275,6 +303,35 @@ document.addEventListener("DOMContentLoaded", function () {
             .center-adsense {
                 text-align: center;
             }
+          .unique-sidebar { 
+            width:10%; 
+            background: #444; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+            position: absolute; 
+            top: 170px; 
+            height: 70vh;
+            box-sizing: border-box; 
+        }
+        .unique-sidebar .ad-preview {
+            background: #333; 
+            color: #eaeaea; 
+            padding: 10px; 
+            margin-top: 10px; 
+            border-radius: 8px; 
+            text-align: center; 
+            margin: 10px 0; 
+        }
+        .adbar-left {
+            left:0;
+            margin-left:7px;
+
+        }
+        .adbar-right {
+            right:0;
+            margin-right:7px;
+        }
         </style>
         <header>
             <a class="title" href="/gxmes">Vafor</a>
@@ -289,6 +346,28 @@ document.addEventListener("DOMContentLoaded", function () {
                     <i class="fas fa-expand"></i>
                 </button>
             </div>
+            <!--
+            <div class="unique-sidebar adbar-left">
+                <div class="ad-preview"> 
+                    <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-3858578074050552"
+                    data-ad-slot="8667470266"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                </div>
+            </div>
+            <div class="unique-sidebar adbar-right">
+                <div class="ad-preview"> 
+                    <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-3858578074050552"
+                    data-ad-slot="8667470266"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                </div>
+            </div>
+            -->
             <div>      
             <ins class="adsbygoogle"
             style="display:block"
@@ -332,35 +411,6 @@ document.addEventListener("DOMContentLoaded", function () {
         </footer>
     `;
 
-    async function fetchRecommendedGames() {
-        try {
-            const response = await fetch('/list.json');
-            const data = await response.json();
-            const recommendedGamesContainer = document.getElementById('recommendedGames');
-            recommendedGamesContainer.innerHTML = ''; 
-
-            const cardWidth = 220; 
-            const containerWidth = recommendedGamesContainer.clientWidth;
-            const cardsPerRow = Math.floor(containerWidth / cardWidth);
-
-            const shuffledGames = data.sort(() => 0.5 - Math.random()).slice(0, cardsPerRow);
-
-            shuffledGames.forEach(game => {
-                const gameCard = document.createElement('div');
-                gameCard.className = 'game-card';
-                gameCard.innerHTML = `
-                    <a href="/gxmes/${game.foldername}">
-                    <img src="${game.imgsrc}" alt="${game.name}">
-                    <p>${game.name}</p>
-                    </a>
-                `;
-                recommendedGamesContainer.appendChild(gameCard);
-            });
-        } catch (error) {
-            console.error('Error fetching recommended games:', error);
-        }
-    }
-
     window.addEventListener('resize', fetchRecommendedGames);
 
 
@@ -369,6 +419,7 @@ document.addEventListener("DOMContentLoaded", function () {
     (adsbygoogle = window.adsbygoogle || []).push({});
     (adsbygoogle = window.adsbygoogle || []).push({});
     (adsbygoogle = window.adsbygoogle || []).push({});
+    //(adsbygoogle = window.adsbygoogle || []).push({});
 
 });
 
